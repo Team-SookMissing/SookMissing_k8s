@@ -1,1 +1,11 @@
 #none
+apiVersion: v1
+kind: ConfigMap
+metadata:
+	name: sookmissing-config
+data: 
+  DB_HOST: db-svc          
+  DB_PORT: "3306"         
+  DB_NAME: "sookmissing-db"
+  ANALYZER_URL: "http://analyzer-svc:8000/analyze"
+  API_URL: "http://api-svc:8000/analyze-message"
