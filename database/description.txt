@@ -1,0 +1,1 @@
+service.yaml statuefulset.yaml cronjob.yaml pvc.yaml 필요

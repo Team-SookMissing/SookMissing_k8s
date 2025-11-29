@@ -1,0 +1,1 @@
+deploy.yaml , service.yaml 파일 필요

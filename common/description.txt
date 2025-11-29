@@ -1,0 +1,2 @@
+configmap.yaml 과 secrets.yaml 필요
+secrets.yaml은 gitignore에 넣어서 안올라오게 관리
