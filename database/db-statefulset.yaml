@@ -24,12 +24,12 @@ spec:
           valueFrom:
             secretKeyRef:
               name: sookmissing-secret
-              key: MYSQL_ROOT_PASSWORD
+              key: DB_PASSWORD
         - name: MYSQL_DATABASE
           valueFrom:
-            secretKeyRef:
-              name: sookmissing-secret
-              key: MYSQL_DATABASE
+            configMapKeyRef:
+              name: sookmissing-config
+              key: DB_NAME
   volumeClaimTemplates:
   - metadata:
       name: mysql-persistent-storage
