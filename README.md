@@ -17,7 +17,6 @@ kubernetes/
 │
 ├── api-server/           
 │   ├── api-deployment.yaml
-│   ├── api-hpa.yaml
 │   └── api-service.yaml
 │
 ├── analyzer/             
