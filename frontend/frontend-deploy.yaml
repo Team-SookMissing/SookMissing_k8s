@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: seoyoon954/sookmissing-frontend:v3
+          image: seoyoon954/sookmissing-frontend
           ports:
             - containerPort: 3000
           env:
