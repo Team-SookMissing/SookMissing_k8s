@@ -30,6 +30,9 @@ spec:
             configMapKeyRef:
               name: sookmissing-config
               key: DB_NAME
+        volumeMounts:
+        - name: mysql-persistent-storage
+          mountPath: /var/lib/mysql
   volumeClaimTemplates:
   - metadata:
       name: mysql-persistent-storage
