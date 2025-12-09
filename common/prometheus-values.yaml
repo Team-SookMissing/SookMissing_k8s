@@ -1,0 +1,35 @@
+alertmanager:
+  enabled: false
+
+pushgateway:
+  enabled: false
+
+kube-state-metrics:
+  enabled: false   # deploy/pod 상태까지 보고 싶으면 true로 변경
+
+# 각 노드에 node-exporter DaemonSet 띄우기
+nodeExporter:
+  enabled: true
+  resources:
+    requests:
+      cpu: 30m
+      memory: 30Mi
+    limits:
+      cpu: 100m
+      memory: 100Mi
+
+server:
+  persistentVolume:
+    enabled: false
+  resources:
+    requests:
+      cpu: 200m
+      memory: 300Mi
+    limits:
+      cpu: 500m
+      memory: 700Mi
+  
+  service:
+    type: ClusterIP
+    port: 80
+
